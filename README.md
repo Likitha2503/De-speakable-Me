@@ -40,11 +40,11 @@
 ## 🧩 Libraries to be installed
  ## For Backend Python 
  
-  -pip install cohere
+   pip install cohere
   
-  -pip install SpeechRecognition
+   pip install SpeechRecognition
     
-  -pip install gTTS
+   pip install gTTS
   
    pip install pydub
    
