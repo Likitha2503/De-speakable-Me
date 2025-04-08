@@ -1,37 +1,42 @@
-## Welcome to GitHub Pages
+# 🟡 DEESPEAKABLE ME – The MinionBot
 
-You can use the [editor on GitHub](https://github.com/Likitha2503/Blue_Reads/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+> 🍌 A banana-powered AI sidekick that talks, thinks, sees, and dances like a true Minion. Built for fun, chaos, and creative exploration.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+---
 
-### Markdown
+## 👁️ About the Project
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+**DEESPEAKABLE ME** is a fully interactive Minion-themed robot built with Raspberry Pi, Python, React, and love (and bananas). It speaks like a Minion, detects faces and objects, responds with AI, and wiggles with servos — all while grinning through animated eyes.
 
-```markdown
-Syntax highlighted code block
+---
 
-# Header 1
-## Header 2
-### Header 3
+## 🧠 Features
 
-- Bulleted
-- List
+- 🎙️ **Voice Interaction** – Speech-to-text with Minion-style replies
+- 🗣️ **Text-to-Speech (Minion Voice)** – Pitch-shifted, fast, hilarious
+- 🤖 **AI Chatbot** – Powered by Cohere or GPT-based replies
+- 👀 **Face & Object Detection** – Using OpenCV + YOLOv5
+- ⚙️ **Servo Gestures** – Moves its arms/head when reacting
+- 🎛️ **OLED Display** – Expresses emotion, status, and sass
+- 💻 **React Web UI** – Smooth navigation across Skills, Hardware, Use Cases
+- 🎥 **Media Grid** – For videos & photos of MinionBot in action
 
-1. Numbered
-2. List
+---
 
-**Bold** and _Italic_ and `Code` text
+## 🛠️ Tech Stack
 
-[Link](url) and ![Image](src)
-```
+| Tech        | Role                          |
+|-------------|-------------------------------|
+| Python      | Core logic + hardware control |
+| ReactJS     | UI frontend                   |
+| OpenCV      | Face & object detection       |
+| gTTS/Pydub  | Text-to-speech magic          |
+| Vosk        | Speech-to-text                |
+| RPi.GPIO    | Servo & module control        |
+| HTML/CSS    | Layout + animations           |
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+---
 
-### Jekyll Themes
+## 🧩 Folder Structure
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Likitha2503/Blue_Reads/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
