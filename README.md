@@ -37,6 +37,19 @@
 
 ---
 
-## 🧩 Folder Structure
+## 🧩 Libraries to be installed
+ ## For Backend Python 
+   #pip install cohere
+    pip install SpeechRecognition
+    pip install gTTS
+    pip install pydub
+    pip install playsound
+    pip install opencv-python
+    pip install opencv-python-headless
+    pip install vosk
+    pip install numpy
+    pip install pillow
+    pip install sounddevice
+
 
 
