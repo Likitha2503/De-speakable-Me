@@ -4,7 +4,7 @@ import speech_recognition as sr
 from playsound import playsound
 
 # Initialize Cohere
-co = cohere.Client("4nhFryTiVE4NVS2Uyc3BjZFDIbNIiyjwREr516SE")  # Your API key
+co = cohere.Client("Did not share my personal API")  
 
 import pyttsx3
 import speech_recognition as sr
