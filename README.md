@@ -49,6 +49,15 @@
 - Integrate object-following behavior
 - Deploy full dashboard to Raspberry Pi touchscreen
 
+## Code Breakdown
+
+**ROBOT_python1.py** - Main chatbot code includes cohere chatbot, Test to speech and speech to text.
+**eyes.py** - Code for the eye animations on the OLED screen. 
+**facerecognition.py** - basic face recognition integrated with the pi, and highlights the faces in the camera frame.
+**minions.py**- test code to make the AI chatbot responses sound in a minion voice.
+**minionsounds.py** - random minion laughs and songs.
+**objectrecognition.py**- YOLOv5 run object detection, pre-trained model that I inculcated into my project.
+****
 
 ## 🧩 Libraries to be installed
  ## For Backend Python 
