@@ -37,6 +37,19 @@
 
 ---
 
+## 🧠 What I Learned
+
+- How to integrate Python and React into a cohesive robotics project
+- How voice interaction and AI can humanize machines
+- How cultural inspiration (like Minions!) makes tech fun and memorable
+
+## 🚧 Future Plans
+
+- Add Bluetooth connectivity with iPhone
+- Integrate object-following behavior
+- Deploy full dashboard to Raspberry Pi touchscreen
+
+
 ## 🧩 Libraries to be installed
  ## For Backend Python 
  
@@ -61,6 +74,22 @@
    pip install pillow
    
    pip install sounddevice
+
+   ## ⚙️ Hardware and display
+   
+   pip install RPi.GPIO
+   
+   pip install adafruit-circuitpython-ssd1306
+   
+   pip install board
+   
+   pip install busio
+
+   ## Frontend 
+
+   npm install
+
+   
 
 
 
