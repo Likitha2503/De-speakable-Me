@@ -1,0 +1,688 @@
+/* Base styles from before */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  overflow-x: hidden;
+  background-color: #f5f5f5;
+  scroll-behavior: smooth;
+  transition: background-color 0.3s ease;
+}
+/*Minion*/
+.intro-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+}
+
+.intro-text {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.minion-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.minion {
+  width: 300px;
+  height: 500px;
+  position: relative;
+}
+
+.minion-body {
+  width: 220px;
+  height: 340px;
+  background-color: #FFE029;
+  border-radius: 110px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.overall {
+  width: 220px;
+  height: 100px;
+  background-color: #4B8BF4;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.overall-strap {
+  width: 20px;
+  height: 200px;
+  background-color: #4B8BF4;
+  position: absolute;
+  bottom: 80px;
+  left: 100px;
+  transition: background-color 0.3s ease;
+}
+
+.pocket {
+  width: 60px;
+  height: 40px;
+  background-color: #3E70CB;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 40px;
+  left: 80px;
+  transition: background-color 0.3s ease;
+}
+
+.eye {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  border: 5px solid #A9A9A9;
+  top: 60px;
+  left: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.pupil {
+  width: 40px;
+  height: 40px;
+  background-color: #7C4700;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.goggle-strap {
+  width: 240px;
+  height: 20px;
+  background-color: #A9A9A9;
+  position: absolute;
+  top: 100px;
+  left: -10px;
+  transition: background-color 0.3s ease;
+}
+
+.mouth {
+  width: 100px;
+  height: 50px;
+  border-radius: 0 0 50px 50px;
+  border: 3px solid #000;
+  border-top: none;
+  position: absolute;
+  top: 180px;
+  left: 60px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.tooth {
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 0;
+  border: 2px solid #000;
+  border-top: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.tooth:nth-child(1) {
+  left: 25px;
+}
+
+.tooth:nth-child(2) {
+  left: 55px;
+}
+
+.arm {
+  width: 30px;
+  height: 130px;
+  background-color: #FFE029;
+  position: absolute;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.left-arm {
+  transform-origin: top center;
+  left: -20px;
+  top: 130px;
+  animation: wave 2s infinite alternate;
+}
+
+.right-arm {
+  transform-origin: top center;
+  right: -20px;
+  top: 130px;
+  animation: wave 2s infinite alternate-reverse;
+}
+
+.hand {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -20px;
+  left: -5px;
+}
+
+.leg {
+  width: 40px;
+  height: 60px;
+  background-color: #4B8BF4;
+  position: absolute;
+  bottom: -30px;
+  border-radius: 0 0 20px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.left-leg {
+  left: 50px;
+}
+
+.right-leg {
+  right: 50px;
+}
+
+.shoe {
+  width: 60px;
+  height: 30px;
+  background-color: #000;
+  position: absolute;
+  bottom: -30px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.left-shoe {
+  left: -10px;
+}
+
+.right-shoe {
+  right: -10px;
+}
+
+.hair {
+  width: 10px;
+  height: 40px;
+  background-color: #000;
+  position: absolute;
+  top: -30px;
+  border-radius: 5px;
+}
+
+.hair:nth-child(1) {
+  left: 90px;
+  height: 50px;
+}
+
+.hair:nth-child(2) {
+  left: 110px;
+  height: 40px;
+}
+
+.hair:nth-child(3) {
+  left: 130px;
+  height: 45px;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+
+button {
+  background-color: #4B8BF4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 16px;  
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #3E70CB;
+  transform: scale(1.05);
+}
+
+
+
+.speech-bubble {
+  position: absolute;
+  top: 30px;
+  right: 350px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px;
+  max-width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.5s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.speech-bubble:after {
+  content: '';
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-left-color: white;
+  border-right: 0;
+  margin-top: -15px;
+  transition: border-left-color 0.3s ease;
+}
+
+h1 {
+  color: #4B8BF4;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.visible {
+  opacity: 1;
+}
+
+#scroll-prompt {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  color: #4B8BF4;
+  animation: bounce 2s infinite;
+  transition: color 0.3s ease;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0) translateX(-50%);
+  }
+  40% {
+    transform: translateY(-20px) translateX(-50%);
+  }
+  60% {
+    transform: translateY(-10px) translateX(-50%);
+  }
+}
+
+.jump {
+  animation: jump 0.5s ease;
+}
+
+@keyframes jump {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
+}
+
+/* Dark Mode Toggle */
+.mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.mode-toggle-btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.mode-toggle-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode .intro-text {
+  background-color: rgba(30, 30, 30, 0.9);
+  color: #e0e0e0;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode h1 {
+  color: #90CAF9; /* Lighter blue for better visibility */
+}
+
+.minion-dark {
+  background-color: #D4AF37; /* Darker yellow */
+}
+
+.overall-dark {
+  background-color: #3949AB; /* Darker blue */
+}
+
+.pocket-dark {
+  background-color: #283593; /* Even darker blue */
+}
+
+.dark-mode .eye {
+  background-color: #f0f0f0;
+  border-color: #666;
+}
+
+.dark-mode .mouth {
+  background-color: #e0e0e0;
+  border-color: #333;
+}
+
+.dark-mode .tooth {
+  background-color: #e0e0e0;
+  border-color: #333;
+}
+
+.dark-mode .goggle-strap {
+  background-color: #666;
+}
+
+.speech-dark {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+.speech-dark:after {
+  border-left-color: #333;
+}
+
+.scroll-dark {
+  color: #90CAF9;
+}
+
+.dark-mode .mode-toggle-btn {
+  background-color: #90CAF9;
+  color: #121212;
+}
+
+.dark-mode button {
+  background-color: #3949AB;
+}
+
+.dark-mode button:hover {
+  background-color: #5C6BC0;
+}
+
+.robo-nav {
+  background-color: #f4c542;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.robo-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.robo-nav li {
+  margin: 0 15px;
+}
+
+.robo-nav button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.robo-nav .nav-icon {
+  display: block;
+  font-size: 24px;
+}
+
+.robo-nav .nav-text {
+  display: block;
+}
+
+.robo-nav li.active button,
+.robo-nav button:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.mode-toggle {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.mode-toggle-btn {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Enhanced styling for the Minion Skills section */
+
+.skills-section {
+  background-color: #1a1a1a;
+  padding: 60px 20px;
+  color: #fffbe6;
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  color: #f4c542;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  background-color: #2a2a2a;
+  border-radius: 16px;
+  padding: 25px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  background-color: #3a3a3a;
+}
+
+.skill-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.skill-card h2,
+.skill-card h3 {
+  font-size: 1.6rem;
+  color: #ffeb3b;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fffde7;
+  max-width: 300px;
+}
+
+/* 📁 src/styles/Hardware.css */
+
+.hardware-section {
+  background-color: #1e1e1e;
+  padding: 60px 20px;
+  color: #fffbe6;
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.hardware-section .section-title {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #f4c542;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.hardware-specs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.spec-group {
+  background-color: #2a2a2a;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-align: left;
+}
+
+.spec-group:hover {
+  transform: translateY(-10px);
+  background-color: #3a3a3a;
+}
+
+.spec-group h2 {
+  font-size: 1.8rem;
+  color: #ffeb3b;
+  margin-bottom: 15px;
+}
+
+.spec-list {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.spec-label {
+  font-weight: bold;
+  color: #f4c542;
+}
+/* 🎥 Random Minion Animation (for every page) */
+.random-minion {
+  position: absolute;
+  animation: floatMinion 4s ease-in-out infinite;
+  z-index: 10;
+}
+
+@keyframes floatMinion {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+.random-minion.medium {
+  width: 80px;
+  height: auto;
+}
+
+.random-minion.large {
+  width: 120px;
+  height: auto;
+}
+
+.random-minion.tiny {
+  width: 50px;
+  height: auto;
+}
+
+.random-minion.top-right {
+  top: 20px;
+  right: 30px;
+}
+
+.random-minion.bottom-left {
+  bottom: 20px;
+  left: 30px;
+}
+
+.random-minion.center-right {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.random-minion.center-left {
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.random-minion.bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+
